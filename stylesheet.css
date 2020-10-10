@@ -1,19 +1,23 @@
+/* Body,HTML formatting */
 body, html{
     height: 100%;
     margin: 0px;
     background-color: #F4F4F4;
 }
 
+/* Custom font for headings */
 @font-face {
     font-family: ArcaMajora;
     src: url(ArcaMajora3-Bold.woff);
 }
 
+/* Custom logo font */
 @font-face {
     font-family: Travel;
     src: url(Travel.otf);
 }
 
+/* Free shipping banner */
 .message-banner{
     display: flex;
     align-items: center;
@@ -71,6 +75,7 @@ p{
     margin: 0px;
 }
 
+/* Site Nav */
 nav {
     text-align: center;
     align-items: center;
@@ -114,6 +119,7 @@ nav li.current a {
     color: black;
 }
 
+/* Logo formatting */
 .logo {
 	float: left;
     vertical-align: middle;
@@ -184,8 +190,6 @@ nav li.current a {
 /* The hero image */
 .hero-img {
     background-image: linear-gradient(rgba(62, 62, 62, 0.58), rgba(0, 0, 0, 0.5)), url("Hero-BG.png");
-
-     /* Set a specific height */
     height: 120%;
     background-position: center;
     background-repeat: no-repeat;
@@ -194,7 +198,8 @@ nav li.current a {
 
   }
 
-  .card{
+/* Home page product cards*/
+.card{
     width: 295px;
     height: 353px;
     left: 82px;
@@ -235,9 +240,10 @@ nav li.current a {
       margin-bottom: 50px;
  
   }
+
+  /* Testimonials */
   .testimonial{
     display: flex;
-    /* justify-content: center; */
     align-items: center;
     flex-direction: column;
 
@@ -285,6 +291,7 @@ nav li.current a {
     margin-left: 100px;
   }
 
+  /* Filters */
   .sidenav {
     width: 130px;
     position: fixed;
@@ -304,9 +311,10 @@ nav li.current a {
     display: block;
   }
 
+  /* Product Page */
+
   .product-page-top{
     display: flex;
-    /* justify-content: center; */
     align-items: center;
     flex-direction: column;
     padding: 10px;
@@ -343,12 +351,11 @@ nav li.current a {
     width: 100%;
   }
 
-  /* Slideshow container */
+  /* Product Slideshow */
   .slideshow-container {
     width: 100%;
     max-height: 550px;
     display: flex;
-    /* justify-content: center; */
     align-items: center;
     justify-content: center;
     flex-direction: row;
@@ -384,6 +391,7 @@ nav li.current a {
     height: 545px;
   }
 
+  /* Product Options */
   .product-options{
     display: flex;
     align-items: center;
@@ -499,6 +507,7 @@ nav li.current a {
     filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.25));
   }
 
+  /* Products */
   .product-item-catharness{
     width: 260px;
     height: 250px;
@@ -606,26 +615,26 @@ nav li.current a {
     padding: 4px;
   }
 
-.down {
-    transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-}
+    .down {
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+    }
 
-  .sort-button{
-    text-decoration: none;
-    font-size: 16px;
-    color: #373737;
-    display: block;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    border-bottom: 1px solid #373737; ;
-    background: none;
-    width: 200px;
-    text-align: left;
-    cursor: pointer;
-    outline: none;
-    margin-top: 12px;
-    margin-bottom: 12px;
-    padding-bottom: 8px;
-  }
+    .sort-button{
+        text-decoration: none;
+        font-size: 16px;
+        color: #373737;
+        display: block;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 1px solid #373737; ;
+        background: none;
+        width: 200px;
+        text-align: left;
+        cursor: pointer;
+        outline: none;
+        margin-top: 12px;
+        margin-bottom: 12px;
+        padding-bottom: 8px;
+    }
