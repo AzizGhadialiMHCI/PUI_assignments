@@ -1,3 +1,0 @@
-# muddypaws-app
-
-
