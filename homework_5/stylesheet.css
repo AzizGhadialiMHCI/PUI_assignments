@@ -107,8 +107,19 @@ nav li a {
     font-size: 1.25em;
 }
 
+a.altnav{
+  display: inline-block;
+  padding: 17px 12px;
+  line-height: 38px;
+  text-decoration: none;
+
+  font-family: ArcaMajora;
+  font-size: 1.25em;
+  color: #373737;
+}
+
 nav li a:hover {
-    color: white;
+    color: #476A00;
 }
 
 nav li a:active {
@@ -121,12 +132,8 @@ nav li.current a {
 
 /* Logo formatting */
 .logo {
-	float: left;
+	  float: left;
     vertical-align: middle;
-
-    font-family: Travel;
-    font-size: 2em;
-    color: #373737;
     
 }
 
@@ -135,7 +142,35 @@ nav li.current a {
     padding: 17px 12px;
     line-height: 38px;
     text-decoration: none;
-    color: white;
+    font-family: Travel;
+    font-size: 2em;
+    color: #ffffff;
+}
+
+.logo a:hover {
+  color: #ffffff;
+  
+}
+
+.logoalt {
+  float: left;
+  vertical-align: middle;
+  
+}
+
+.logoalt a:hover {
+  color: #373737;
+  
+}
+
+.logoalt a {
+  display: inline-block;
+  padding: 17px 12px;
+  line-height: 38px;
+  text-decoration: none;
+  font-family: Travel;
+  font-size: 2em;
+  color: #373737;
 }
 
 .menuicons{
@@ -152,12 +187,13 @@ nav li.current a {
     color: white;
 }
 
-#alticoncolor{
+.alticoncolor{
     filter: invert(1);
 }
 
-#alttextcolor{
+.alttextcolor{
     color: #373737;
+    text-decoration: none;
 }
 
 /* Hero text */
@@ -183,12 +219,19 @@ nav li.current a {
     text-align: center;
     vertical-align: middle;
     font-family: ArcaMajora;
+    text-decoration: none;
     font-size: 20px;
     color: #ffffff;
   }
 
-/* The hero image */
-.hero-img {
+  .hero-text button a {
+    text-decoration: none;
+    color: #ffffff;
+  }
+
+
+  /* The hero image */
+  .hero-img {
     background-image: linear-gradient(rgba(62, 62, 62, 0.58), rgba(0, 0, 0, 0.5)), url("Hero-BG.png");
     height: 120%;
     background-position: center;
@@ -453,7 +496,6 @@ nav li.current a {
 
   .product-details-block{
       display: flex;
-      align-items: top;
       justify-content: center;
       margin-top: 75px;
       overflow: hidden;
@@ -542,6 +584,7 @@ nav li.current a {
   }
 
   a.product-item-link{
+      color: #373737;
       text-decoration: none;
   }
 
@@ -560,6 +603,8 @@ nav li.current a {
 
   h3.product-item-text {
     margin: 4px;
+    color: #373737
+
   }
 
   .products-grid-item{
@@ -582,7 +627,7 @@ nav li.current a {
       display: grid;
       grid-template-columns: auto auto;
       margin-top: 64px;
-      margin-right: 36;
+      margin-right: 36px;
   }
 
   .filters{
