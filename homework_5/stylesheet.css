@@ -320,7 +320,7 @@ nav li.current a {
     background-image: url("Quotes.png");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: auto;
+    background-size: contain;
     position: relative;
 
   }
@@ -658,25 +658,32 @@ nav li.current a {
   .products-grid{
       max-width: 1100px;
       display: grid;
-      grid-template-columns: auto auto auto auto;
+      grid-template-columns: auto auto auto;
       column-gap: 24px;
       float: left;
   }
 
-  /* Filters container */
-  .filters-products-grid{
-      display: grid;
-      grid-template-columns: auto auto;
-      margin-top: 64px;
-      margin-right: 36px;
+  /* Makes product grid 4 columns if the screen width is greater than 1400px */
+  @media (min-width: 1400px) {
+    .products-grid { grid-template-columns: auto auto auto auto; }
   }
 
-  /* Individual filters */
+  /* Grid that contains filters and products */
+  .filters-products-grid{
+      display: grid;
+      grid-template-columns: 20% auto;
+      margin-top: 64px;
+      margin-right: 36px;
+      
+  }
+
+
+  /* Filter block */
   .filters{
-    padding: 0px 36px;
+    padding: 0px 20px;
   } 
 
-  /* Filter dropdown button */
+  /* Filter dropdowns */
   .dd-button{
     text-decoration: none;
     font-size: 16px;
