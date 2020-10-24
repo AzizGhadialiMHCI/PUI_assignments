@@ -966,3 +966,22 @@ nav li.current a {
     margin: auto;
   }
 
+  .num-cart-items{
+    color: white;
+  }
+
+  .cart-items-bg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    background-color: #476A00;
+    width: 30px;
+    height: 30px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(100%, -50%);
+  }
+

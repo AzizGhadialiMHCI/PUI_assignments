@@ -19,7 +19,11 @@
             <li><a class="altnav" href="#">Contact</a></li>
             <li class="menuicons">
                 <a href="index.html"><img src="account.png" alt="account icon"></a>
-                <a href="index.html"><img src="cart.png" alt="cart icon"></a>
+                <a href="index.html"><img src="cart.png" alt="cart icon">
+                    <div class="cart-items-bg">
+                        <p id="num-items-cart" class="num-cart-items">0</p>
+                    </div> 
+                </a>
             </li>
         </ul>
     </nav> <!-- /Nav -->
@@ -81,7 +85,7 @@
                     <p id="increase-quantity" class="quantity">+</p>
                 </div>
                 <h3 id="cat-harness-item-cost">$29</h3>
-                <button class="add-to-cart">Add to cart</button>
+                <button id="cat-harness-atc" class="add-to-cart">Add to cart</button>
             </div>
         </div>
     </section> <!-- End product options-->
