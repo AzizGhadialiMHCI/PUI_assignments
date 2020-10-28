@@ -1,21 +1,13 @@
-document.getElementById("strawberry").onclick = function() {changeItemColorStrawberry()};
-
-function changeItemColorStrawberry(){
-    console.log("hi")
-    document.getElementById("focused-slider").src = "strawberry-cat-harness.jpg";
-} 
-
-function changeItemColorBlackberry(){
-    document.getElementById("focused-slider").style.backgroundImage = "url('strawberry-cat-harness.jpg')";
-} 
-
-function changeItemColorCrazyberry(){
-    document.getElementById("focused-slider").style.backgroundImage = "url('strawberry-cat-harness.jpg')";
-} 
-
-function changeItemColorFireOrange(){
-    document.getElementById("focused-slider").style.backgroundImage = "url('strawberry-cat-harness.jpg')";
-} 
+var colorSection = document.getElementById("color-options");
+var sizeColors = colorSection.getElementsByClassName("color-option-button");
+for(var i = 0; i<sizeColors.length; i++){
+    sizeColors[i].addEventListener("click", function(){
+        var current = document.getElementsByClassName("active-color");
+        current[0].className = current[0].className.replace(" active-color", "");
+        this.className += " active-color";
+        console.log(current[0].id);
+    });
+}
 
 var sizeSection = document.getElementById("size-options");
 var sizeButtons = sizeSection.getElementsByClassName("button-option");

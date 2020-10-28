@@ -494,6 +494,7 @@ nav li.current a {
     background-image: url("Color4.png");
   }
 
+  /* Styling for color options */
   .color-option-button{
     width: 33px;
     height: 33px;
@@ -501,6 +502,17 @@ nav li.current a {
     margin-right: 12px;
     margin-left: 12px;
     border: none;
+  }
+
+  /* Styling for selected or highlighted color options */
+  .active-color, .color-option-button:hover{
+    width: 33px;
+    height: 33px;
+    border-radius: 100px;
+    margin-right: 12px;
+    margin-left: 12px;
+    border: none;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
 
   /* Option select button */

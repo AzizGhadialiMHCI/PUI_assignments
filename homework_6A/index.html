@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Home</title>
 
-    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="custom-stylesheet.css">
 </head>
 <body>
     <div class="message-banner">
@@ -20,8 +20,12 @@
                 <li><a class="nav" href="#">About</a></li>
                 <li><a class="nav" href="#">Contact</a></li>
                 <li class="menuicons">
-                    <a class="alticoncolor" href="index.html"><img src="account.png" alt="account icon"></a>
-                    <a class="alticoncolor" href="index.html"><img src="cart.png" alt="cart icon"></a>
+                    <a class="alticoncolor" href="cart.html"><img src="account.png" alt="account icon"></a>
+                    <a href="cart.html"><img src="cart.png" alt="cart icon">
+                        <div class="cart-items-bg">
+                            <p id="num-items-cart" class="num-cart-items">0</p>
+                        </div> 
+                    </a>
                 </li>
             </ul>
         </nav> <!-- /Nav -->
