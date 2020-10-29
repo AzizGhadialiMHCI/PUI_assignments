@@ -452,6 +452,14 @@ nav li.current a {
   img.slider{
     width: 100%;
     height: 545px;
+    border-radius: 5px;
+  }
+
+  /* slide image hover */
+  img.slider:hover{
+    width: 100%;
+    height: 545px;
+    border-radius: 5px;
   }
 
   /* Product Options */
@@ -487,11 +495,11 @@ nav li.current a {
   }
 
   #crazyberry{
-    background-image: url("Color3.png");
+    background-image: url("Color4.png");
   }
 
   #fireorange{
-    background-image: url("Color4.png");
+    background-image: url("Color3.png");
   }
 
   /* Styling for color options */
@@ -997,3 +1005,10 @@ nav li.current a {
     transform: translate(100%, -50%);
   }
 
+  #cart-bg{
+    width: 100%;
+    height: 110%;
+    background-image: url("Cart-BG.png");
+    background-size: cover;
+    background-repeat: none;
+  }
