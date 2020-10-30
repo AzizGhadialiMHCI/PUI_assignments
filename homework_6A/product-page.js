@@ -6,22 +6,22 @@ document.getElementById("fireorange").onclick = function() {changeItemColorFireO
 
 //change image to strawberry cat harness
 function changeItemColorStrawberry(){
-    document.getElementById("focused-slider").src = "strawberry-cat-harness.jpg";
+    document.getElementById("focused-slider").src = "images/strawberry-cat-harness.jpg";
 } 
 
 //change image to blackberry cat harness
 function changeItemColorBlackberry(){
-    document.getElementById("focused-slider").src = "blackberry-cat-harness.jpg";
+    document.getElementById("focused-slider").src = "images/blackberry-cat-harness.jpg";
 } 
 
 //change image to crazyberry cat harness
 function changeItemColorCrazyberry(){
-    document.getElementById("focused-slider").src = "crazyberry-cat-harness.jpg";
+    document.getElementById("focused-slider").src = "images/crazyberry-cat-harness.jpg";
 } 
 
 //change image to fireorange cat harness
 function changeItemColorFireOrange(){
-    document.getElementById("focused-slider").src = "fireorange-cat-harness.jpg";
+    document.getElementById("focused-slider").src = "images/fireorange-cat-harness.jpg";
 } 
 
 // Change the "selected" color option

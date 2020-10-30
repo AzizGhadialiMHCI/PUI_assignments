@@ -250,7 +250,7 @@ nav li.current a {
 
   /* The hero image */
   .hero-img {
-    background-image: linear-gradient(rgba(62, 62, 62, 0.58), rgba(0, 0, 0, 0.5)), url("Hero-BG.png");
+    background-image: linear-gradient(rgba(62, 62, 62, 0.58), rgba(0, 0, 0, 0.5)), url("images/Hero-BG.png");
     height: 120%;
     background-position: center;
     background-repeat: no-repeat;
@@ -315,7 +315,7 @@ nav li.current a {
     width: 408.09px;
     height: 477.18px;
     margin: 0px 40px 0px 40px;
-    background-image: url("Quotes.png");
+    background-image: url("images/Quotes.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -487,19 +487,19 @@ nav li.current a {
   }
 
   #strawberry{
-    background-image: url("Color1.png");
+    background-image: url("images/Color1.png");
   }
 
   #blackberry{
-    background-image: url("Color2.png");
+    background-image: url("images/Color2.png");
   }
 
   #crazyberry{
-    background-image: url("Color4.png");
+    background-image: url("images/Color4.png");
   }
 
   #fireorange{
-    background-image: url("Color3.png");
+    background-image: url("images/Color3.png");
   }
 
   /* Styling for color options */
@@ -647,7 +647,7 @@ nav li.current a {
     height: 250px;
     left: 398px;
     top: 1776px;
-    background: url(greeshma-gangadharan-qoYDRMuxA9U-unsplash.png);
+    background: url("images/greeshma-gangadharan-qoYDRMuxA9U-unsplash.png");
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 10px;
@@ -659,7 +659,7 @@ nav li.current a {
     height: 250px;
     left: 398px;
     top: 1776px;
-    background: url(dogharness.png);
+    background: url("images/dogharness.png");
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 10px;
@@ -671,7 +671,7 @@ nav li.current a {
     height: 250px;
     left: 398px;
     top: 1776px;
-    background: url(dogattachment.png);
+    background: url("images/dogattachment.png");
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 10px;
@@ -1007,6 +1007,6 @@ nav li.current a {
   #cart-bg{
     width: 100%;
     height: 110%;
-    background-image: url("Cart-BG.png");
+    background-image: url("images/Cart-BG.png");
     background-size: cover;
   }
