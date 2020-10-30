@@ -799,7 +799,6 @@ nav li.current a {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: top;
     margin-top: 50px;
   }
 
@@ -978,7 +977,7 @@ nav li.current a {
     width: 50px;
   }
 
-  #cart-taxes-number-container{
+  .cart-taxes-number-container{
     width: 50px;
   }
 
@@ -1010,5 +1009,4 @@ nav li.current a {
     height: 110%;
     background-image: url("Cart-BG.png");
     background-size: cover;
-    background-repeat: none;
   }

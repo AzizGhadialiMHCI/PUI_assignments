@@ -1,8 +1,8 @@
 // calls function to change the product image when the correct id is selected 
-document.getElementById("strawberry").onclick = function() {changeItemColorStrawberry()};
-document.getElementById("blackberry").onclick = function() {changeItemColorBlackberry()};
-document.getElementById("crazyberry").onclick = function() {changeItemColorCrazyberry()};
-document.getElementById("fireorange").onclick = function() {changeItemColorFireOrange()};
+document.getElementById("strawberry").onclick = function() {changeItemColorStrawberry();};
+document.getElementById("blackberry").onclick = function() {changeItemColorBlackberry();};
+document.getElementById("crazyberry").onclick = function() {changeItemColorCrazyberry();};
+document.getElementById("fireorange").onclick = function() {changeItemColorFireOrange();};
 
 //change image to strawberry cat harness
 function changeItemColorStrawberry(){
