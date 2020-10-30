@@ -637,7 +637,6 @@ nav li.current a {
     background: linear-gradient(180deg, #434343 0%, rgba(255, 255, 255, 0) 100%), url("images/pexels-spencer-gurley-14480551.png");
     margin: 24px;
     border-radius: 10px;
-    
     filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.25));
   }
 
