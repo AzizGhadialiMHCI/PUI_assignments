@@ -1,5 +1,3 @@
-// Aziz's really shitty JS code
-
 // calls function to change the product image when the correct id is selected 
 document.getElementById("strawberry").onclick = function() {changeItemColorStrawberry()};
 document.getElementById("blackberry").onclick = function() {changeItemColorBlackberry()};
