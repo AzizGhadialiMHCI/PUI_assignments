@@ -24,6 +24,13 @@ function changeItemColorFireOrange(){
     document.getElementById("focused-slider").src = "images/fireorange-cat-harness.jpg";
 } 
 
+// Variables to hold current product state
+const atcButton = document.getElementById('cat-harness-atc');
+var color = "strawberry";
+var size = "size-tiny";
+var quantity = parseInt(document.getElementById("num-items").innerHTML);
+var totalCost = 29;
+
 // Change the "selected" color option
 var colorSection = document.getElementById("color-options"); //store the container with the color options
 var sizeColors = colorSection.getElementsByClassName("color-option-button"); //create a list with all the color options
@@ -32,7 +39,7 @@ for(var i = 0; i<sizeColors.length; i++){ //loop through the color options
         var current = document.getElementsByClassName("active-color"); //store the current selected color
         current[0].className = current[0].className.replace(" active-color", ""); //deselect the current selected color
         this.className += " active-color"; //change the selected color to the one that was clicked
-        console.log(current[0].id);
+        color = current[0].id;
     });
 }
 
@@ -44,14 +51,11 @@ for(var i = 0; i<sizeButtons.length; i++){
         var current = document.getElementsByClassName("active");
         current[0].className = current[0].className.replace(" active", "");
         this.className += " active";
-        console.log(current[0].id);
+        size = current[0].id;
     });
 }
 
 // Change the quanitity selected
-var quantity = parseInt(document.getElementById("num-items").innerHTML);
-var totalCost = 0;
-console.log(quantity)
 document.getElementById("decrease-quantity").onclick = function () {decrimentQuantity()};
 document.getElementById("increase-quantity").onclick = function () {increaseQuantity()};
 
@@ -88,5 +92,22 @@ document.getElementById("cat-harness-atc").onclick = function() {incrementShoppi
 function incrementShoppingBag(){
     let count = parseInt(document.getElementById("num-items-cart").innerHTML) + quantity;
     document.getElementById("num-items-cart").innerHTML = count;
-    console.log(count);
 }
+
+let itemsArray = []
+if (localStorage.getItem("items") != null){
+    itemsArray = JSON.parse(localStorage.getItem("items"));
+    console.log(itemsArray);
+}
+
+
+localStorage.setItem('items', JSON.stringify(itemsArray))
+const data = JSON.parse(localStorage.getItem('items'))
+
+atcButton.addEventListener("click", function(e) {
+    e.preventDefault()
+    
+    itemsArray.push([color, size, quantity, totalCost])
+    localStorage.setItem('items', JSON.stringify(itemsArray))
+  })
+
