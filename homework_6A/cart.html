@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="custom-stylesheet.css">
 </head>
 <body>
+    <!-- Setup cart page bg -->
     <div id="cart-bg">
         <div class="message-banner">
             <p class="message-banner-text">Free shipping for orders over $25</p>
@@ -28,14 +29,16 @@
                 </li>
             </ul>
         </nav> <!-- /Nav -->
-        <section>
+        <section> 
+            <!-- Create cart container -->
             <div class="cart-container">
                 <div id="main-cart-container" class="main-cart-container">
                     <div class="main-cart-header">
                         <h3 id="your-items-text">Your items</h3>
                     </div>
-                    <!-- Cart product item --> 
+                    <!-- Cart product items go here --> 
                 </div>
+                <!-- Create sidebar for cart -->
                 <div class="cart-sidebar">
                     <div class="cart-sidebar-items">
                         <div class="cart-sidebar-line-item">
@@ -47,7 +50,6 @@
                             <input class="shipping-zipcode-input" type="text" value="Zip Code">
                             <select class="shipping-type" name="shipping-type" id="cars">
                                 <option value="1">Standard (Free)</option>
-                                <option value="2">Expedited ($20)</option>
                             </select>
                         </form>
                         <div class="cart-sidebar-line-item">
@@ -55,7 +57,7 @@
                                 <h3 class="cart-sidebar-subtotal-text">Taxes</h3>
                             </div>
                             <div id="cart-taxes-number-container">
-                                <p id="cart-sidebar-lineItem-taxes" class="cart-sidebar-lineItem-text">$5.95</p>
+                                <p id="cart-sidebar-lineItem-taxes" class="cart-sidebar-lineItem-text"></p>
                             </div>
                         </div>
                         <div class="cart-sidebar-line-item">

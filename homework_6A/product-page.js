@@ -30,6 +30,8 @@ var color = "strawberry";
 var size = "size-tiny";
 var quantity = parseInt(document.getElementById("num-items").innerHTML);
 var totalCost = 29;
+var imgurl = "images/strawberry-cat-harness.jpg";
+
 
 // Change the "selected" color option
 var colorSection = document.getElementById("color-options"); //store the container with the color options
@@ -40,6 +42,19 @@ for(var i = 0; i<sizeColors.length; i++){ //loop through the color options
         current[0].className = current[0].className.replace(" active-color", ""); //deselect the current selected color
         this.className += " active-color"; //change the selected color to the one that was clicked
         color = current[0].id;
+        console.log( typeof color)
+        if (color == "strawberry"){
+            imgurl = "images/strawberry-cat-harness.jpg"
+        }
+        if (color == "blackberry"){
+            imgurl = "images/blackberry-cat-harness.jpg"
+        }
+        if (color == "crazyberry"){
+            imgurl = "images/crazyberry-cat-harness.jpg"
+        }
+        if (color == "fireorange"){
+            imgurl = "images/fireorange-cat-harness.jpg"
+        }
     });
 }
 
@@ -87,27 +102,36 @@ function increaseQuantity(){
     
 }
 
-// function to increment quantity displayed on shopping bag
-document.getElementById("cat-harness-atc").onclick = function() {incrementShoppingBag()};
-function incrementShoppingBag(){
-    let count = parseInt(document.getElementById("num-items-cart").innerHTML) + quantity;
-    document.getElementById("num-items-cart").innerHTML = count;
-}
-
+// Setup local and session storage variables for cart items and quantity
 let itemsArray = []
+var totalCartQuantity = 0;
+
+// Check if storage already has items
 if (localStorage.getItem("items") != null){
     itemsArray = JSON.parse(localStorage.getItem("items"));
-    console.log(itemsArray);
+}
+
+if (sessionStorage.getItem("cartQ") != null){
+    totalCartQuantity = sessionStorage.getItem("cartQ");
 }
 
 
-localStorage.setItem('items', JSON.stringify(itemsArray))
-const data = JSON.parse(localStorage.getItem('items'))
+// Change the item quantity
+document.getElementById("num-items-cart").innerHTML = totalCartQuantity;
 
+// Add to cart button 
 atcButton.addEventListener("click", function(e) {
     e.preventDefault()
-    
-    itemsArray.push([color, size, quantity, totalCost])
+    // Add new product item to local storage 
+    let tempQ = 0;
+    itemsArray.push([color, size, quantity, totalCost, imgurl])
     localStorage.setItem('items', JSON.stringify(itemsArray))
+    // Update number of cart items 
+    tempQ += parseInt(totalCartQuantity) + quantity;
+    totalCartQuantity = tempQ;
+    sessionStorage.setItem('cartQ', tempQ)
+    document.getElementById("num-items-cart").innerHTML = tempQ;
+
   })
+
 

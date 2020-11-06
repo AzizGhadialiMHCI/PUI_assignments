@@ -811,6 +811,19 @@ nav li.current a {
     padding-bottom: 36px;
     margin-right: 20px;
   }
+
+   /* Main cart container */
+   .main-cart-container-empty{
+    width: 650px;
+    min-height: 100px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;  
+    padding-bottom: 36px;
+    margin-right: 20px;
+    text-align: center;
+  }
+
   .main-cart-header{
     display: flex;
     height: 55px;
@@ -908,6 +921,7 @@ nav li.current a {
 
   .cart-img{
     min-width: 200px;
+    height: 250px;
   }
 
   .remove-item{
@@ -1009,3 +1023,4 @@ nav li.current a {
     background-image: url("images/Cart-BG.png");
     background-size: cover;
   }
+
