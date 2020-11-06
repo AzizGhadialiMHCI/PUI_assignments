@@ -8,13 +8,13 @@ body, html{
 /* Custom font for headings */
 @font-face {
     font-family: ArcaMajora;
-    src: url(ArcaMajora3-Bold.woff);
+    src: url(fonts/ArcaMajora3-Bold.woff);
 }
 
 /* Custom logo font */
 @font-face {
     font-family: Travel;
-    src: url(Travel.otf);
+    src: url(fonts/Travel.otf);
 }
 
 /* Free shipping banner */
