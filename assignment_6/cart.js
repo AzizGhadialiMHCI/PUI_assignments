@@ -258,7 +258,7 @@ document.getElementById("cart-sidebar-lineItem-text").innerHTML = "$" + calcSubt
 calcSubtotal = parseFloat(calcSubtotal);
 document.getElementById("cart-sidebar-lineItem-taxes").innerHTML = "$" + Math.round(taxes*100)/100;
 calcSubtotal += taxes;
-document.getElementById("cart-sidebar-lineItem-total").innerHTML = "$" + calcSubtotal;
+document.getElementById("cart-sidebar-lineItem-total").innerHTML = "$" + Math.round(calcSubtotal*100)/100;
 
 
 
