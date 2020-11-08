@@ -42,7 +42,6 @@ for(var i = 0; i<sizeColors.length; i++){ //loop through the color options
         current[0].className = current[0].className.replace(" active-color", ""); //deselect the current selected color
         this.className += " active-color"; //change the selected color to the one that was clicked
         color = current[0].id;
-        console.log( typeof color)
         if (color == "strawberry"){
             imgurl = "images/strawberry-cat-harness.jpg"
         }

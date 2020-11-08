@@ -8,8 +8,6 @@ var removeButtonList = [];
 var subtotal = document.createElement('div');
 var taxes = 0; 
 var totalCartQuantity = parseInt(sessionStorage.getItem("cartQ"));
-console.log("totalCartQuantity");
-console.log(totalCartQuantity);
 var quantityByProduct = [];
 
 // Assign current cart quantity
@@ -227,7 +225,6 @@ function loadFilledProducts(index){
 // Loads the cart
 function loadProducts(){
     productItems = JSON.parse(localStorage.getItem("items"));
-    console.log("printing product items in function " + productItems)
     if (productItems == null || productItems.length == 0){
         loadEmptyProducts();
     }
