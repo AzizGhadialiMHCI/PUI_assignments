@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cart</title>
+    <link rel="stylesheet" href="custom-stylesheet.css">
+</head>
+<body>
+    <div id="cart-bg">
+        <div class="message-banner">
+            <p class="message-banner-text">Free shipping for orders over $25</p>
+        </div>
+        <nav>
+            <ul>
+                <li class="logoalt">
+                    <a href="index.html">Muddy Paws Adventure Gear</a>
+                </li>
+                <li><a class="altnav" href="products.html">Products</a></li>
+                <li><a class="altnav" href="#">About</a></li>
+                <li><a class="altnav" href="#">Contact</a></li>
+                <li class="menuicons">
+                    <a href="index.html"><img src="account.png" alt="account icon"></a>
+                    <a href="cart.html"><img src="cart.png" alt="cart icon">
+                        <div class="cart-items-bg">
+                            <p id="num-items-cart" class="num-cart-items">0</p>
+                        </div> 
+                    </a>
+                </li>
+            </ul>
+        </nav> <!-- /Nav -->
+        <section>
+            <div class="cart-container">
+                <div class="main-cart-container">
+                    <div class="main-cart-header">
+                        <h3 id="your-items-text">Your items</h3>
+                    </div>
+                    <div class="main-cart-item">
+                        <img class="cart-img" src="Cart-item-img.png" alt="cart item image">
+                        <div class="main-cart-item-details">
+                            <div class="main-cart-product-name-price">
+                                <h3 class="main-cart-item-product-name">Cat harness</h3>
+                                <h3 class="main-cart-item-product-price">$29</h3>
+                            </div>
+                            <p>Item description, Item description, Item description, Item description, Item description, </p>
+                            <div class="product-options">
+                                <div class="product-options-container">
+                                    <div class="cart-select-option">
+                                        <button id = "strawberry" class="cart-color-option-button"></button>
+                                        <button id = "blackberry" class="cart-color-option-button"></button>
+                                        <button id = "crazyberry" class="cart-color-option-button"></button>
+                                        <button id = "fireorange" class="cart-color-option-button"></button>
+                                    </div>
+                                    <div id="cart-size-options" class="cart-select-option">
+                                        <button id="size-tiny" class="cart-size-option-activeSize" value="Tiny">Tiny</button>
+                                        <button id="size-small" class="cart-size-option" value="Small">Small</button>
+                                        <button id="size-medium" class="cart-size-option" value="Medium">Medium</button>
+                                        <button id="size-large" class="cart-size-option" value="Large">Large</button>
+                                    </div>
+                                    <div class="cart-select-option">
+                                        <p id="decrease-quantity" class="quantity">-</p>
+                                        <p id="num-items" class="quantity">1</p>
+                                        <p id="increase-quantity" class="quantity">+</p>
+                                        <p class="remove-item">Remove</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-cart-subtotal">
+                        <h3>Subtotal</h3>
+                        <h3 class="main-cart-subtotal-text">$29</h3>
+                    </div>  
+                </div>
+                <div class="cart-sidebar">
+                    <div class="cart-sidebar-items">
+                        <div class="cart-sidebar-line-item">
+                            <h3 class="cart-sidebar-subtotal-text">Subtotal</h3>
+                            <p class="cart-sidebar-lineItem-text">$29</p>
+                        </div>
+                        <h3>Shipping</h3>
+                        <form>
+                            <input class="shipping-zipcode-input" type="text" value="Zip Code">
+                            <select class="shipping-type" name="shipping-type" id="cars">
+                                <option value="1">Standard (Free)</option>
+                                <option value="2">Expedited ($20)</option>
+                            </select>
+                        </form>
+                        <div class="cart-sidebar-line-item">
+                            <div id="cart-taxes-text-container">
+                                <h3 class="cart-sidebar-subtotal-text">Taxes</h3>
+                            </div>
+                            <div id="cart-taxes-number-container">
+                                <p class="cart-sidebar-lineItem-text">$5.95</p>
+                            </div>
+                        </div>
+                        <div class="cart-sidebar-line-item">
+                            <div class="cart-taxes-text-container">
+                                <h3 class="cart-sidebar-subtotal-text">Total</h3>
+                            </div>
+                            <div class="cart-taxes-number-container">
+                                <p class="cart-sidebar-lineItem-text">$34.95</p>
+                            </div>
+                        </div>
+                        <div class="checkout-button-container">
+                            <button class="add-to-cart">Checkout</button>
+                        </div>
+                    </div>
+                </div>
+            
+            </div>
+        </section>
+        <div class="footer">
+            <p>© 2020 Muddy Paws Adventure Gear, Inc. All Rights Reserved.</p>
+        </div>
+    </div>
+</body>
+</html>
