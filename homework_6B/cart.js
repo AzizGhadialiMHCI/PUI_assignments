@@ -10,6 +10,11 @@ var taxes = 0;
 var totalCartQuantity = parseInt(sessionStorage.getItem("cartQ"));
 var quantityByProduct = [];
 
+//Check if cart quantity is NaN
+if (Number.isNaN(totalCartQuantity)){
+    totalCartQuantity = 0;
+}
+
 // Assign current cart quantity
 document.getElementById("num-items-cart").innerHTML = totalCartQuantity;
 // Load the products into the cart
